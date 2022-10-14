@@ -6,8 +6,5 @@
     
 <mapper namespace="com.kim.hdhd.dao">
 	
-	<select id="test" resultType="com.kim.hdhd.dto">
-	SELECT * FROM survey_table
-	</select>
 	
 </mapper>
