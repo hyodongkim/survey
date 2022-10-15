@@ -4,7 +4,18 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-<mapper namespace="com.kim.hdhd.dao">
+<mapper namespace="com.kimhd.hdhd.dao.dao">
 	
+	<insert id="loginID" parameterType="com.kimhd.hdhd.dto.dto">
+	INSERT INTO survey_table(id) values(#{param1})
+	</insert>
+	
+    <select id="IsOverlap" resultType="com.kimhd.hdhd.dto.dto">
+	SELECT Count(*) FROM survey_table WHERE id=#{param1}
+	</select>
+	
+	<insert id="plus_off" parameterType="com.kimhd.hdhd.dto.dto">
+	UPDATE survey_table SET _off=#{param2} WHERE id=#{param1}
+	</insert>
 	
 </mapper>

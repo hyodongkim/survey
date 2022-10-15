@@ -97,7 +97,7 @@
 
 </form>
 
-<a href="/login/select/officer"> <input type="button" value="< 이전 " >< 이전</a> 
-<br> <a href="/result"><input type="submit" value="결과보기" >결과보기</a>
+<a href="/login/select/officer"> <input type="button" value="< 이전 " ></a> 
+<br> <a href="/result"><input type="submit" value="결과보기" ></a>
 </body>
 </html>

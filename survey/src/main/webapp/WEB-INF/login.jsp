@@ -9,8 +9,12 @@
 <body>
 로그인<br>
 
-<input type="text" name="id"><br>
-<input type="submit" value="입력">
+<form action="/loginID" method="get">
 
+<input type="text" name="id"><br>
+<a href="/login/select"><input type="submit" value="입력"></a>
+
+</form>
+${text}
 </body>
 </html>

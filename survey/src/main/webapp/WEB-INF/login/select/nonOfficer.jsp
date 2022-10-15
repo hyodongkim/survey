@@ -130,6 +130,6 @@
 
 </form>
 
-<a href="/login/select/nonOfficer2"><input type="button" value="다 음 >" ></a>
+<a href="/login/select/nonOfficer2"><input type="submit" value="다 음 >" ></a>
 </body>
 </html>
