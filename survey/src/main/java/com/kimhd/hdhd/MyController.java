@@ -23,34 +23,34 @@ public class MyController {
 	@Autowired 
 	private service Service;
 	
-	@RequestMapping("/login")
-	public String login() {
-		
-		return "login";
-	}
-	@RequestMapping(value="/loginID", method=RequestMethod.GET)
-	public String loginID( @RequestParam("id") String id, HttpServletRequest request, Model model) throws Exception{
-			
-		try {
-			
-			Service.loginID(id);
-		
-		} catch(DuplicateKeyException e) {
-			
-			request.getSession().setAttribute("id",id);
-			HttpSession session = request.getSession();
-			session.getAttribute("id");
-			
-			String text = "아이디가 중복되었습니다.";
-			
-			model.addAttribute("text",text);
-			
-			return "login";
-			
-		}
-			return "login/select";
-			
-	}
+//	@RequestMapping("/login")
+//	public String login() {
+//		
+//		return "login";
+//	}
+//	@RequestMapping(value="/loginID", method=RequestMethod.GET)
+//	public String loginID( @RequestParam("id") String id, HttpServletRequest request, Model model) throws Exception{
+//			
+//		try {
+//			
+//			Service.loginID(id);
+//		
+//		} catch(DuplicateKeyException e) {
+//			
+//			request.getSession().setAttribute("id",id);
+//			HttpSession session = request.getSession();
+//			session.getAttribute("id");
+//			
+//			String text = "아이디가 중복되었습니다.";
+//			
+//			model.addAttribute("text",text);
+//			
+//			return "login";
+//			
+//		}
+//			return "login/select";
+//			
+//	}
 
 	@RequestMapping("/login/select")
 	public String select() {
