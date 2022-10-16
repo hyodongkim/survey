@@ -6,6 +6,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<style>
+#button_color{
+	color:white;
+	background: linear-gradient( rgb(139, 189, 255), rgb(31, 81, 183) );
+	border : none;
+	width : 130px;
+	height : 40px;
+	border-radius : 7px;
+}
+</style>
+
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -188,6 +200,6 @@
 
 
 
-<a href="/login/select/officer2"><input type="submit" value="다 음 >" ></a>
+<a href="/login/select/officer2"><input type="submit" value="다 음 >" id="button_color"></a>
 </body>
 </html>

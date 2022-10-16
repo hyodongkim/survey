@@ -6,6 +6,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<style>
+#button_color{
+	color:white;
+	background: linear-gradient( rgb(139, 189, 255), rgb(31, 81, 183) );
+	border : none;
+	width : 250px;
+	height : 100px;
+	border-radius : 7px;
+}
+</style>
+
 <body>
 나의 갑질 지수는? 나의 부패수준은? <br>
 
@@ -21,6 +33,6 @@
 
 보직자와 비보직자 문항이 다르므로, 본인에 해당하는 버튼을 눌러주세요 <br>
 
-<a href="/login/select/officer"><input type="button" value=">보직자"></a> <br> <a href="/login/select/nonOfficer"><input type="button" value=">비보직자"></a>
+<a href="/login/select/officer"><input type="button" value=">보직자" id="button_color"></a> <br> <a href="/login/select/nonOfficer"><input type="button" value=">비보직자"></a>
 </body>
 </html>

@@ -6,6 +6,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<style>
+#button_color{
+	color:white;
+	background: linear-gradient( rgb(139, 189, 255), rgb(31, 81, 183) );
+	border : none;
+	width : 130px;
+	height : 40px;
+	border-radius : 7px;
+}
+</style>
+
 <body>
 (보직자) 청렴수준 자가진단 <br>
 
@@ -97,7 +109,7 @@
 
 </form>
 
-<a href="/login/select/officer"> <input type="button" value="< 이전 " ></a> 
+<a href="/login/select/officer"> <input type="button" value="< 이전 " id="button_color"></a> 
 <br> <a href="/result"><input type="submit" value="결과보기" ></a>
 </body>
 </html>
